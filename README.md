@@ -19,7 +19,7 @@ This pipeline is fully orchestrated by Apache Airflow, running inside Docker con
 ## 🏗️ Architecture
 ```
           ┌─────────────────────────────────────────────┐
-          │                 Airflow DAG                  │
+          │                 Airflow DAG                 │
           │   mock_stock_etl (runs every 5 min)         │
           └─────────────────────────────────────────────┘
                       │         │         │
@@ -119,4 +119,5 @@ Inside Airflow UI:
    - Add dbt transformations
    - Add testing with pytest
    - Add data quality (Great Expectations)
+
 
