@@ -1,0 +1,11 @@
+Step 2: Create a docker-compose.yml File 
+Step 3:Create a dags Folder
+Step 4: Initialize Airflow Database
+docker-compose run airflow-webserver airflow db init
+
+Step 5: Start Airflow and PostgreSQL
+docker-compose up
+Step 6: Create Your First DAG
+
+
+docker exec -it airflow-docker-project-airflow-webserver-1 airflow users create --username admin --firstname Admin --lastname User --role Admin --email admin@example.com
