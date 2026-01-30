@@ -201,7 +201,7 @@ default_args = {
 with DAG(
     dag_id="mock_stock_etl",
     default_args=default_args,
-    schedule_interval="*/1 * * * *",  # run every 5 min
+    schedule_interval="*/5 * * * *",  # run every 5 min
     catchup=False,
     description="ETL pipeline generating fake stock data → transform → Postgres"
 ):
