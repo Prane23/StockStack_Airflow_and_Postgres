@@ -1,11 +1,9 @@
-# StockStack: Airflow + Postgres ETL Pipeline
+# 📈 StockStack: Airflow + Postgres ETL Pipeline
 A fully containerized ETL (Extract → Transform → Load) pipeline built using:
-
-Apache Airflow (Docker Compose)
-Python (Pandas)
-PostgreSQL
-Docker
-Environment‑based configuration (.env)
+- Apache Airflow (Docker Compose)
+- Python (Pandas)
+- PostgreSQL (docker)
+- Environment‑based configuration (.env)
 
 This project generates mock stock data, transforms it, and loads it into Postgres automatically on a schedule.
 ---
@@ -86,6 +84,12 @@ Inside Airflow UI:
  - Toggle the switch to ON
  - Click "Trigger DAG" (optional)
   The DAG runs every 5 minute.
+
+<img width="1773" height="981" alt="image" src="https://github.com/user-attachments/assets/8b8a416d-dd31-4297-a311-7986db8b6af9" />
+
+<img width="1541" height="922" alt="image" src="https://github.com/user-attachments/assets/053ceeea-b986-4558-96aa-bed4af51eb9b" />
+
+
 ## 📊 6. Where the Data is Stored
 1. Inside Docker (Airflow container)
    - /opt/airflow/data/stock/raw/
@@ -105,6 +109,9 @@ Inside Airflow UI:
   Database: {database}
 2. Table created:
   stock_schema.stock_data
+
+<img width="1210" height="560" alt="image" src="https://github.com/user-attachments/assets/7a6888da-14d2-4f6c-8b63-34c809f57212" />
+
 ---
 ## ⭐ Future Improvements (Optional)
    - Add pgAdmin container
@@ -112,3 +119,4 @@ Inside Airflow UI:
    - Add dbt transformations
    - Add testing with pytest
    - Add data quality (Great Expectations)
+
