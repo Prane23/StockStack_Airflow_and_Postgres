@@ -119,5 +119,8 @@ Inside Airflow UI:
    - Add dbt transformations
    - Add testing with pytest
    - Add data quality (Great Expectations)
-
+---
+## 🙌 Author
+**Prashant**  
+Airflow | Postgres | Python | Data Engineering | Integrations
 
